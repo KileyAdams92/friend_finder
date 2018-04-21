@@ -32,16 +32,21 @@ module.exports = function(app) {
       var friendScore = friends[i].scores.reduce(add, 0);
       var newFriendScore = newFriend.scores.reduce(add, 0);
       var scoreDiff = friendScore - newFriendScore;
-      if (scoreDiff < lowestScore) {
+      if (scoreDiff < lowestScore && newFriend.name !== friends[i].name) {
         lowestScore = scoreDiff;
-        winningFriend = friends[i];
+        newFriend.winningFriend = friends[i];
       }
     }
-    console.log(winningFriend);
+    console.log(
+      newFriend.name +
+        "'s " +
+        "friend match is : " +
+        newFriend.winningFriend.name
+    );
 
     newFriend.routeName = newFriend.name.replace(/\s+/g, "").toLowerCase();
 
-    console.log(newFriend);
+    console.log("Newly added friend: " + newFriend.name);
 
     friends.push(newFriend);
 
