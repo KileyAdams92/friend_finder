@@ -23,6 +23,7 @@ module.exports = function(app) {
 
   app.post("/api/friends", function(req, res) {
     var newFriend = req.body;
+    newFriend.scores = Array.of(newFriend.scores);
     var winningFriend;
     var lowestScore = 100;
     function add(a, b) {
@@ -30,7 +31,7 @@ module.exports = function(app) {
     }
     for (var i = 0; i < friends.length; i++) {
       var friendScore = friends[i].scores.reduce(add, 0);
-      var newFriendScore = newFriend.scores.reduce(add, 0);
+      var newFriendScore = Array.from(newFriend.scores).reduce(add, 0);
       var scoreDiff = friendScore - newFriendScore;
       if (scoreDiff < lowestScore && newFriend.name !== friends[i].name) {
         lowestScore = scoreDiff;
