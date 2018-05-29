@@ -1,0 +1,81 @@
+.body {
+  background-color: #fdf7f6;
+}
+
+body {
+  font-family: "Amatic", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(253, 223, 221, 0.8),
+      rgba(233, 193, 177, 0.8)
+    ),
+    url(../assets/images/puppies.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main-heading {
+  color: #fff;
+  text-transform: uppercase;
+
+  backface-visibility: hidden;
+  margin-bottom: 60px;
+}
+
+.appTitle {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+}
+
+.appDescrip {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
+}
+
+.homeBtn {
+  background-color: #fdf7f6;
+  color: #474442;
+}
+
+.surveyBody {
+  background-color: #fddfdd;
+}
+
+.btn {
+  background-color: #fcefbf;
+  color: #474442;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(15px);
+}
