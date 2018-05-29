@@ -15,8 +15,23 @@ body {
   background-color: rgba(253, 223, 221, 0.8);
 }
 
-.h1.surveyTitle {
+h1.surveyTitle {
   font-family: "Amatic SC", cursive;
+}
+
+.surveyTitle {
+  font-size: 100px;
+}
+
+h3,
+h5 {
+  font-size: 60px;
+}
+
+.custom-select,
+.form-control {
+  font-size: 40px;
+  height: 80px;
 }
 
 .header {
