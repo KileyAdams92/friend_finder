@@ -16,187 +16,189 @@
 
 <body class="surveyBody">
     <div class="container-fluid p-4 text-center">
-        <h1>Survey Questions</h1>
+        <h1 class="surveyTitle">Survey Questions</h1>
     </div>
     <div class="container">
-        <hr class="p-3">
-        <form>
-            <div class="form-group">
-                <label for="newFriendName">
-                    <h3>Name (required)</h3>
-                </label>
-                <input type="text" class="form-control" id="newFriendName" placeholder="Please enter your name, assigned to you by your human"
-                    required>
-            </div>
-            <div class="form-group">
-                <label for="photoLink">
-                    <h3>Photo (required)</h3>
-                </label>
-                <input type="text" class="form-control" id="newPhotoLink" placeholder="Please insert a link to a picture of you and your favorite toy"
-                    required>
-            </div>
-            <div class="form-row align-items-center">
-                <div class="col-auto p-4">
-                    <label class="mr-sm-2" for="q1">
-                        <h5>Squeaky balls and toys are your favorite.</h5>
-                    </label>
-                    <select class="custom-select mr-sm-2" id="q1">
-                        <option selected>Choose...</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly Agree)</option>
-                    </select>
-                </div>
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                        <label for="newFriendName">
+                            <h3>Name (required)</h3>
+                        </label>
+                        <input type="text" class="form-control" id="newFriendName" placeholder="Please enter your name, given to you by your human."
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="photoLink">
+                            <h3>Photo (required)</h3>
+                        </label>
+                        <input type="text" class="form-control" id="newPhotoLink" placeholder="Please insert a link to a picture of you." required>
+                    </div>
+                    <div class="form-row align-items-center">
+                        <div class="col p-4">
+                            <label class="mr-sm-2" for="q1">
+                                <h5>Squeaky balls and toys are your favorite.</h5>
+                            </label>
+                            <select class="custom-select mr-sm-2" id="q1">
+                                <option selected>Choose...</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5(Strongly Agree)</option>
+                            </select>
+                        </div>
 
-            </div>
-            <div class="form-row align-items-center">
-                <div class="col-auto p-4">
-                    <label class="mr-sm-2" for="q2">
-                        <h5>You go the dog park often.</h5>
-                    </label>
-                    <select class="custom-select mr-sm-2" id="q2">
-                        <option selected>Choose...</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly Agree)</option>
-                    </select>
-                </div>
+                    </div>
+                    <div class="form-row align-items-center">
+                        <div class="col p-4">
+                            <label class="mr-sm-2" for="q2">
+                                <h5>You go the dog park often.</h5>
+                            </label>
+                            <select class="custom-select mr-sm-2" id="q2">
+                                <option selected>Choose...</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5(Strongly Agree)</option>
+                            </select>
+                        </div>
 
-            </div>
-            <div class="form-row align-items-center">
-                <div class="col-auto p-4">
-                    <label class="mr-sm-2" for="q3">
-                        <h5>You like to take baths.</h5>
-                    </label>
-                    <select class="custom-select mr-sm-2" id="q3">
-                        <option selected>Choose...</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly Agree)</option>
-                    </select>
-                </div>
+                    </div>
+                    <div class="form-row align-items-center">
+                        <div class="col p-4">
+                            <label class="mr-sm-2" for="q3">
+                                <h5>You like to take baths.</h5>
+                            </label>
+                            <select class="custom-select mr-sm-2" id="q3">
+                                <option selected>Choose...</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5(Strongly Agree)</option>
+                            </select>
+                        </div>
 
-            </div>
-            <div class="form-row align-items-center">
-                <div class="col-auto p-4">
-                    <label class="mr-sm-2" for="q4">
-                        <h5>Playing in the mud is one of your favorite pasttimes.</h5>
-                    </label>
-                    <select class="custom-select mr-sm-2" id="q4">
-                        <option selected>Choose...</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly Agree)</option>
-                    </select>
-                </div>
+                    </div>
+                    <div class="form-row align-items-center">
+                        <div class="col p-4">
+                            <label class="mr-sm-2" for="q4">
+                                <h5>Playing in the mud is one of your favorite pasttimes.</h5>
+                            </label>
+                            <select class="custom-select mr-sm-2" id="q4">
+                                <option selected>Choose...</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5(Strongly Agree)</option>
+                            </select>
+                        </div>
 
-            </div>
-            <div class="form-row align-items-center">
-                <div class="col-auto p-4">
-                    <label class="mr-sm-2" for="q5">
-                        <h5>Being chased is one of your preferred ways to play.</h5>
-                    </label>
-                    <select class="custom-select mr-sm-2" id="q5">
-                        <option selected>Choose...</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly Agree)</option>
-                    </select>
-                </div>
+                    </div>
+                    <div class="form-row align-items-center">
+                        <div class="col p-4">
+                            <label class="mr-sm-2" for="q5">
+                                <h5>Being chased is one of your preferred ways to play.</h5>
+                            </label>
+                            <select class="custom-select mr-sm-2" id="q5">
+                                <option selected>Choose...</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5(Strongly Agree)</option>
+                            </select>
+                        </div>
 
-            </div>
-            <div class="form-row align-items-center">
-                <div class="col-auto p-4">
-                    <label class="mr-sm-2" for="q6">
-                        <h5>You like to chase other dogs.</h5>
-                    </label>
-                    <select class="custom-select mr-sm-2" id="q6">
-                        <option selected>Choose...</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly Agree)</option>
-                    </select>
-                </div>
+                    </div>
+                    <div class="form-row align-items-center">
+                        <div class="col p-4">
+                            <label class="mr-sm-2" for="q6">
+                                <h5>You like to chase other dogs.</h5>
+                            </label>
+                            <select class="custom-select mr-sm-2" id="q6">
+                                <option selected>Choose...</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5(Strongly Agree)</option>
+                            </select>
+                        </div>
 
-            </div>
-            <div class="form-row align-items-center">
-                <div class="col-auto p-4">
-                    <label class="mr-sm-2" for="q7">
-                        <h5>You frequently share your food when friends come over for playdates.</h5>
-                    </label>
-                    <select class="custom-select mr-sm-2" id="q7">
-                        <option selected>Choose...</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly Agree)</option>
-                    </select>
-                </div>
+                    </div>
+                    <div class="form-row align-items-center">
+                        <div class="col p-4">
+                            <label class="mr-sm-2" for="q7">
+                                <h5>You frequently share your food when friends come over for playdates.</h5>
+                            </label>
+                            <select class="custom-select mr-sm-2" id="q7">
+                                <option selected>Choose...</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5(Strongly Agree)</option>
+                            </select>
+                        </div>
 
-            </div>
-            <div class="form-row align-items-center">
-                <div class="col-auto p-4">
-                    <label class="mr-sm-2" for="q8">
-                        <h5>Most of your day is spent napping.</h5>
-                    </label>
-                    <select class="custom-select mr-sm-2" id="q8">
-                        <option selected>Choose...</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly Agree)</option>
-                    </select>
-                </div>
+                    </div>
+                    <div class="form-row align-items-center">
+                        <div class="col p-4">
+                            <label class="mr-sm-2" for="q8">
+                                <h5>Most of your day is spent napping.</h5>
+                            </label>
+                            <select class="custom-select mr-sm-2" id="q8">
+                                <option selected>Choose...</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5(Strongly Agree)</option>
+                            </select>
+                        </div>
 
-            </div>
-            <div class="form-row align-items-center">
-                <div class="col-auto p-4">
-                    <label class="mr-sm-2" for="q9">
-                        <h5>Swimming in lakes and ponds is a favorite hobby of yours.</h5>
-                    </label>
-                    <select class="custom-select mr-sm-2" id="q9">
-                        <option selected>Choose...</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly Agree)</option>
-                    </select>
-                </div>
+                    </div>
+                    <div class="form-row align-items-center">
+                        <div class="col p-4">
+                            <label class="mr-sm-2" for="q9">
+                                <h5>Swimming in lakes and ponds is a favorite hobby of yours.</h5>
+                            </label>
+                            <select class="custom-select mr-sm-2" id="q9">
+                                <option selected>Choose...</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5(Strongly Agree)</option>
+                            </select>
+                        </div>
 
-            </div>
-            <div class="form-row align-items-center">
-                <div class="col-auto p-4">
-                    <label class="mr-sm-2" for="q10">
-                        <h5>You bark incessantly to the point that your friends are annoyed.</h5>
-                    </label>
-                    <select class="custom-select mr-sm-2" id="q10">
-                        <option selected>Choose...</option>
-                        <option value="1">1 (Strongly Disagree)</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5(Strongly Agree)</option>
-                    </select>
-                </div>
+                    </div>
+                    <div class="form-row align-items-center">
+                        <div class="col p-4">
+                            <label class="mr-sm-2" for="q10">
+                                <h5>You bark incessantly to the point that your friends are annoyed.</h5>
+                            </label>
+                            <select class="custom-select mr-sm-2" id="q10">
+                                <option selected>Choose...</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5(Strongly Agree)</option>
+                            </select>
+                        </div>
 
+                    </div>
+                    <button type="submit" class="btn" id="add-btn" data-toggle="modal" data-target="#friendModal">Submit</button>
+                </form>
             </div>
-            <button type="submit" class="btn" id="add-btn" data-toggle="modal" data-target="#friendModal">Submit</button>
-        </form>
+        </div>
     </div>
 
     <!-- Modal -->

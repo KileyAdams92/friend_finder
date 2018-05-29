@@ -1,14 +1,18 @@
-.body {
-  background-color: #fdf7f6;
-}
+/* .body {
+} */
 
 body {
-  font-family: "Amatic", sans-serif;
+  font-family: "Amatic SC", cursive;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
   color: #777;
   padding: 30px;
+  background-color: #fdf7f6;
+}
+
+.h1.surveyTitle {
+  font-family: "Amatic SC", cursive;
 }
 
 .header {
@@ -54,14 +58,7 @@ body {
   letter-spacing: 17.4px;
 }
 
-.homeBtn {
-  background-color: #fdf7f6;
-  color: #474442;
-}
-
-.surveyBody {
-  background-color: #fddfdd;
-}
+/* s */
 
 .btn {
   background-color: #fcefbf;
@@ -78,4 +75,60 @@ body {
 
 .btn:hover {
   transform: translateY(15px);
+}
+
+@media only screen and (max-width: 576px) {
+  .header {
+    width: 100%;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .text-box {
+    width: 100;
+    /* margin: 0; */
+  }
+  .main-heading {
+    margin-bottom: 0;
+  }
+
+  appTitle {
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    /* letter-spacing: 10px; */
+    padding: 0;
+  }
+
+  .surveyTitle {
+    font-size: 80px;
+    font-weight: 700;
+  }
+
+  .appDescrip {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    /* letter-spacing: 17.4px; */
+  }
+
+  h3,
+  h5 {
+    font-size: 60px;
+    font-weight: 700;
+  }
+
+  .custom-select,
+  .form-control {
+    font-size: 30px;
+    height: 60px;
+  }
+
+  .btn {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 40px;
+  }
 }
