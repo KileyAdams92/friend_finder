@@ -46,19 +46,17 @@ body {
 
 .appTitle {
   display: block;
-  font-size: 60px;
-  font-weight: 400;
+  font-size: 100px;
+  font-weight: 700;
   letter-spacing: 35px;
 }
 
 .appDescrip {
   display: block;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: 17.4px;
 }
-
-/* s */
 
 .btn {
   background-color: #fcefbf;
@@ -71,6 +69,7 @@ body {
   border-radius: 100px;
   transition: all 0.2s;
   position: relative;
+  font-size: 50px;
 }
 
 .btn:hover {
