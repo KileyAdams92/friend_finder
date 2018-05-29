@@ -41,7 +41,7 @@ body {
   text-transform: uppercase;
 
   backface-visibility: hidden;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .appTitle {
@@ -49,6 +49,7 @@ body {
   font-size: 100px;
   font-weight: 700;
   letter-spacing: 35px;
+  padding-top: 100px;
 }
 
 .appDescrip {
