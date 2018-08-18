@@ -96,6 +96,9 @@ h5 {
   transform: translateY(15px);
 }
 
+@media only screen and (max-width: 1620px) {
+}
+
 @media only screen and (max-width: 576px) {
   .mainContainer {
     padding: 0;

@@ -6,7 +6,7 @@ module.exports = function(app) {
   });
 
   app.get("/api/friends/:friend?", function(req, res) {
-    var chosen = req.params.friends;
+    var chosen = req.params.friend;
 
     if (chosen) {
       console.log(chosen);
@@ -23,16 +23,15 @@ module.exports = function(app) {
 
   app.post("/api/friends", function(req, res) {
     var newFriend = req.body;
-    newFriend.scores = Array.of(newFriend.scores);
-    var winningFriend;
     var lowestScore = 100;
     function add(a, b) {
       return parseInt(a) + parseInt(b);
     }
+    var newFriendScore = newFriend.scores.reduce(add, 0);
+
     for (var i = 0; i < friends.length; i++) {
       var friendScore = friends[i].scores.reduce(add, 0);
-      var newFriendScore = Array.from(newFriend.scores).reduce(add, 0);
-      var scoreDiff = friendScore - newFriendScore;
+      var scoreDiff = Math.abs(friendScore - newFriendScore);
       if (scoreDiff < lowestScore && newFriend.name !== friends[i].name) {
         lowestScore = scoreDiff;
         newFriend.winningFriend = friends[i];
